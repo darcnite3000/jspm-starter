@@ -24,7 +24,7 @@ module.exports = {
   },
   assets: {
     source: appRoot+'assets/**/*.*',
-    output: appRoot+'assets/',
+    output: destRoot+'assets/',
     globs: [appRoot+'assets/**/*.*','!**/*.scss']
   },
   jspm: {
