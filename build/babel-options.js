@@ -7,7 +7,9 @@ module.exports = {
   sourceMap: true,
   sourceMapName: '',
   moduleIds: false,
-  experimental: false,
+  optional: [],
+  stage: 2,
+  loose: [],
   format: {
     comments: false,
     compact: false,
