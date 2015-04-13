@@ -37,7 +37,7 @@ module.exports = function(config) {
     'babelPreprocessor': {
       options: {
         sourceMap: 'inline',
-        modules: 'system',
+        modules: 'common',
         moduleIds: false,
         optional: [
           "es7.decorators",
