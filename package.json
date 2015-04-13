@@ -30,13 +30,16 @@
     "vinyl-paths": "^1.0.0"
   },
   "jspm": {
-    "directories": {
-      "packages": "jspm_packages"
-    },
+    "directories": {},
     "configFile": "system.conf.js",
     "dependencies": {
       "lodash": "npm:lodash@^3.3.1",
       "normalize.css": "github:necolas/normalize.css@^3.0.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.0.12",
+      "babel-runtime": "npm:babel-runtime@^5.0.12",
+      "core-js": "npm:core-js@^0.8.1"
     }
   }
 }

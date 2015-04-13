@@ -1,6 +1,11 @@
 System.config({
   "baseURL": "",
   "transpiler": "babel",
+  "babelOptions": {
+    "optional": [
+      "runtime"
+    ]
+  },
   "paths": {
     "*": "*.js",
     "app/*": "dist/app/*.js",
@@ -11,6 +16,9 @@ System.config({
 
 System.config({
   "map": {
+    "babel": "npm:babel-core@5.0.12",
+    "babel-runtime": "npm:babel-runtime@5.0.12",
+    "core-js": "npm:core-js@0.8.1",
     "lodash": "npm:lodash@3.3.1",
     "normalize.css": "github:necolas/normalize.css@3.0.2",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -24,10 +32,8 @@ System.config({
     },
     "github:jspm/nodelibs-http@1.7.0": {
       "Base64": "npm:Base64@0.2.1",
-      "events": "github:jspm/nodelibs-events@0.1.0",
       "inherits": "npm:inherits@2.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
-      "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "github:jspm/nodelibs-https@0.1.0": {
@@ -92,6 +98,9 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:core-js@0.8.1": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
@@ -124,6 +133,7 @@ System.config({
       "isarray": "npm:isarray@0.0.1",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "stream": "npm:stream-browserify@1.0.0",
+      "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
